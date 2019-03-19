@@ -1,27 +1,38 @@
 import React, { Component } from "react";
+import PomodoroButtons from "./PomodoroButtons";
 
 class WorkController extends Component {
   constructor() {
     super();
 
     this.state = {
-      number: 0
+      time: 10
     };
 
     this.incrementTime = this.incrementTime.bind(this);
+    this.decrementTime = this.decrementTime.bind(this);
   }
 
   incrementTime() {
     this.setState(prevState => {
-      return { number: prevState.number + 1 };
+      return { time: prevState.time + 1 };
+    });
+  }
+
+  decrementTime() {
+    this.setState(prevState => {
+      return { time: prevState.time - 1 };
     });
   }
 
   render() {
     return (
       <div>
-        <h1>{this.state.number}</h1>
-        <button onClick={this.incrementTime}>Click Me!</button>
+        <h1>{this.state.time}</h1>
+        <PomodoroButtons
+          incrementTime={this.incrementTime}
+          decrementTime={this.decrementTime}
+        />
       </div>
     );
   }
