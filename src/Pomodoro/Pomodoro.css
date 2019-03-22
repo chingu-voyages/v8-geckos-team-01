@@ -1,6 +1,28 @@
-.settings {
+/* =======================================
+============== CONTENT ===============
+===================================== */
+
+.all-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* =======================================
+============== BUTTONS ===============
+===================================== */
+
+.p-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.button-settings {
   display: flex;
   justify-content: space-around;
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .PomodoroButtons {
@@ -11,14 +33,31 @@
 
 .PomodoroButton-controls {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
+.timeButton {
+  border: none;
+  color: red;
+  font-size: 2rem;
+  background-color: white;
+  padding: 0 1rem;
+}
+
+.buttonss {
+  padding: 0 1rem;
+}
+
+/* =======================================
+============== Timer ===============
+===================================== */
+
 .Timer {
+  margin: 2rem 0rem 1rem 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid red;
+  width: 25%;
 }
 
 .Controls {

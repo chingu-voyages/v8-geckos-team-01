@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import moment from "moment";
 import Timer from "./Timer";
 import WorkController from "./WorkController";
 import PomodoroButtons from "./PomodoroButtons";
 import "./Pomodoro.css";
-import moment from "moment";
+
 import Controls from "./Controls";
 
 class PomodoroTimer extends Component {
@@ -41,12 +42,10 @@ class PomodoroTimer extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Pomodoro Timer!</h1>
-        {/* <Timer startCount={this.state.time} />
-        <WorkController time={this.state.time} /> */}
+      <div className="all-content">
+        <h1 className="p-title">Pomodoro Timer!</h1>
 
-        <div className="settings">
+        <div className="button-settings">
           <PomodoroButtons
             type="break"
             handleClick={this.handleSetTimer}
