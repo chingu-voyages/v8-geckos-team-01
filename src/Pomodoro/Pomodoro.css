@@ -1,0 +1,27 @@
+.settings {
+  display: flex;
+  justify-content: space-around;
+}
+
+.PomodoroButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PomodoroButton-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Controls {
+  display: flex;
+  justify-content: center;
+}

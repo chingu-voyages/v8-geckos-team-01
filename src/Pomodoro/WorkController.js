@@ -6,7 +6,8 @@ class WorkController extends Component {
     super();
 
     this.state = {
-      time: 10
+      session: 25,
+      break: 5
     };
 
     this.incrementTime = this.incrementTime.bind(this);
@@ -15,13 +16,13 @@ class WorkController extends Component {
 
   incrementTime() {
     this.setState(prevState => {
-      return { time: prevState.time + 1 };
+      return { time: prevState.session + 1 };
     });
   }
 
   decrementTime() {
     this.setState(prevState => {
-      return { time: prevState.time - 1 };
+      return { time: prevState.session - 1 };
     });
   }
 
