@@ -57,10 +57,26 @@
   flex-direction: column;
   align-items: center;
   border: 2px solid red;
-  width: 25%;
+  border-radius: 20%;
+  width: 30%;
 }
+
+#time-left {
+  font-size: 3rem;
+}
+
+/* =======================================
+============== CONTROLS ===============
+===================================== */
 
 .Controls {
   display: flex;
   justify-content: center;
+}
+
+.control-buttons {
+  color: red;
+  border: none;
+  background-color: white;
+  font-size: 2rem;
 }

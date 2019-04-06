@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import moment from "moment";
 import Timer from "./Timer";
-import WorkController from "./WorkController";
 import PomodoroButtons from "./PomodoroButtons";
 import "./Pomodoro.css";
 
@@ -15,28 +14,18 @@ class PomodoroTimer extends Component {
       session: 25,
       break: 5,
       mode: "session",
-      time: 25 * 60 * 1000,
       active: false
     };
 
-    this.incrementTime = this.incrementTime.bind(this);
-    this.decrementTime = this.decrementTime.bind(this);
+    // Binding the functions to this.state
     this.handleSetTimer = this.handleSetTimer.bind(this);
   }
 
-  incrementTime() {
-    this.setState(prevState => {
-      return { time: prevState.session + 1 };
-    });
-  }
-
-  decrementTime() {
-    this.setState(prevState => {
-      return { time: prevState.session - 1 };
-    });
-  }
-
+  // increments or decrements the type depending on the type that is in the []
+  // in PomodoroButton.js you can put false or true in the function, to know what type will be called
   handleSetTimer(inc, type) {
+    if (this.state[type] === 60 && inc) return;
+    if (this.state[type] === 1 && !!inc) return;
     this.setState({ [type]: this.state[type] + (inc ? 1 : -1) });
   }
 
@@ -59,6 +48,7 @@ class PomodoroTimer extends Component {
         </div>
         <Timer
           mode={this.state.mode}
+          // used import moment here, to get the miliseconds from this.state.mind in mm:ss format.
           time={moment(this.state.time).format("mm:ss")}
         />
         <Controls active={this.state.active} />
