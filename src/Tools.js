@@ -10,8 +10,6 @@ class Tools extends Component {
                     <li>Pomodoro Clock</li>
                     <li>To Do List</li>
                     <li>Task Timer</li>
-                    <li>Coming soon...</li>
-                    <li>Also coming soon...</li>
                 </ol>
             </div>
         );
