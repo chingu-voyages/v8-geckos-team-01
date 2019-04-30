@@ -77,6 +77,8 @@ ul.header li a {
 	position:relative;
 	top:1px;
 }
+
+/* Styles for To Do List */ 
 .todolist {
 	display: flex;
 	flex-direction: column;
@@ -112,4 +114,39 @@ ul.header li a {
 	text-decoration: underline;
 	font-size: 1.6em;
 	cursor: pointer;
+}
+/* Styles for Pomodoro */
+.settings {
+  display: flex;
+	justify-content: space-around;
+	background: #FFCC00;
+	font-size: 1.2em;
+}
+.SetTimer {
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	background:  #FFCC00;
+}
+
+.SetTimer-controls {
+  display: flex;
+  justify-content: center;
+	align-items: center;
+	background:  #FFCC00;
+	font-size: 1.5em;
+}
+
+.Timer {
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	background:  #FFCC00;
+	font-size: 1.5em;
+}
+
+.Controls {
+  display: flex;
+	justify-content: center;
+	background: #FFCC00;
 }

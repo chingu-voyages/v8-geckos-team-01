@@ -7,7 +7,8 @@ import {
 import Home from "./Home";
 import Tools from "./Tools";
 import Contact from "./Contact";
-import ToDoApp from "./ToDoApp"
+import ToDoApp from "./ToDoApp";
+import Pomodoro from "./Pomodoro";
 
 class Main extends Component {
     render() {
@@ -20,12 +21,14 @@ class Main extends Component {
                         <li><NavLink to="/tools">Productivity Tools</NavLink></li>
                         <li><NavLink to="/contact">Contact</NavLink></li>
                         <li><NavLink to="/ToDoApp">To Do List</NavLink></li>
+                        <li><NavLink to="/Pomodoro">Pomodoro Clock</NavLink></li>
                 </ul>
                 <div className="content">
                     <Route exact path="/" component={Home} />
                     <Route path="/tools" component={Tools} />
                     <Route path="/contact" component={Contact} />
                     <Route path="/ToDoApp" component={ToDoApp} />
+                    <Route path="/Pomodoro" component={Pomodoro} />
                 </div>
             </div>
             </HashRouter>
