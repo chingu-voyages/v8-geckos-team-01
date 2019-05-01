@@ -68,6 +68,8 @@ const css = {
 	addBtn: {
 		flex: "2",
 		fontSize: "1.15em",
+		height: "2.9em",
+		color: '#000',
 		backgroundColor: "#FFCE00",
 		border: "none",
 		outline: "none",

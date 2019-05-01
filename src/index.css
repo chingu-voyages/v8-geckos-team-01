@@ -150,3 +150,101 @@ ul.header li a {
 	justify-content: center;
 	background: #FFCC00;
 }
+
+/* Styles for Pomodoro */
+
+#calculator {
+  height: 25.625em;
+  width: 19.375em;
+  margin: 3% auto 0;
+  background-color: #dfd8d0;
+  border: 2px solid #908b85;
+  border-radius: 1.25px;
+  box-shadow: 7px 10px 34px 1px rgba(0, 0, 0, 0.68),    inset -1px -6px 12px 0.1px #89847e;
+  -webkit-border-radius: 1.25px;
+  -moz-border-radius: 1.25px;
+  -ms-border-radius: 1.25px;
+  -o-border-radius: 1.25px;
+}
+
+#title {
+  text-align: center;
+  padding-top: 0.625px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+#entry-box {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  border: 2px solid #b4b39d;
+  border-radius: 6px;
+  background-color: #c3c2ab;
+  text-align: right;
+}
+
+#entry {
+  margin-right: 10px;
+  font-size: 31px;
+}
+
+#answer {
+  margin: 0 0 10px;
+}
+
+#history {
+  position: relative;
+  bottom: 17px;
+  margin: 0 14px 0 0;
+  color: #8b8b7b;
+  font-size: 12px;
+}
+
+#buttons {
+  font-size: 16px;
+  font-weight: bold;
+  width: 280px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  background-color: #3a3a3a;
+  height: 40px;
+  width: 50px;
+  margin: 0 8px 10px 8px;
+  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+  cursor: pointer;
+}
+
+button,
+button:hover,
+button:active,
+button:visited {
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+button:active {
+  transform: translate(0px, 3px);
+  box-shadow: none;
+}
+
+#acBtn,
+#ceBtn {
+  font-size: 16px;
+  background-color: #a72d45;
+  box-shadow: 0px 3px 0px 0px #671c2a;
+}
+
+#undefinedBtn {
+  visibility: hidden;
+}

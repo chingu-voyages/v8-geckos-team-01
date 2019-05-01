@@ -4,9 +4,9 @@ class Contact extends Component {
     render() {
         return (
             <div>
-                <h2>Have any questions?</h2>
-                <p>The easiest thing to do is post on
-        our <btn class="myButton">forums</btn>
+                <h2>Questions or comments?</h2>
+                <p>Feel free to contact me  via <a href="mailto:helon@lurkaround.com.com?subject=SweetWords">
+                    Email</a>
         </p>
             </div>
         );
